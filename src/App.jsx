@@ -1,6 +1,8 @@
 import { Header } from "./components/Header";
 import { Post } from "./components/Post";
 import "./global.css";
+import styles from "./App.module.scss";
+import { Sidebar } from "./components/Sidebar";
 
 export function App() {
 
@@ -8,10 +10,15 @@ export function App() {
     <div>
         <Header/>
 
-        <Post
-            author="Gabriel Raiol"
-            content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus quasi fuga, vitae consectetur nobis, magni voluptates praesentium saepe id minima sequi sapiente accusamus? Alias cum ad illo ab vero!"
-        />
+        <div className={styles.wrapper}>
+          <Sidebar />
+          <main>
+            <Post
+                author="Gabriel Raiol"
+                content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia delectus quasi fuga, vitae consectetur nobis, magni voluptates praesentium saepe id minima sequi sapiente accusamus? Alias cum ad illo ab vero!"
+            />
+          </main>
+        </div>
     </div>
   )
 

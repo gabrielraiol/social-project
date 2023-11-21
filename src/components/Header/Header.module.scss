@@ -1,4 +1,15 @@
+@import '../../styles/variables';
+
 .header {
-    background-color: #202024;
+    background-color: $grey-800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0;
     height: 80px;
+
+    img {
+        height: 2rem;
+        padding-right: 0.5rem;
+    }
 }
