@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.post {
+    background: $grey-800;
+    border-radius: 8px;
+    padding: 2.5rem;
+
+    &+.post {
+        margin-top: 2rem;
+    }
+}
+
+.content {
+    line-height: 1.6;
+    color: $grey-300;
+    margin-top: 1.5rem;
+
+    p {
+        margin-top: 1rem;
+    }
+
+    a {
+        font-weight: bold;
+        color: $green-500;
+        text-decoration: none;
+
+        &:hover {
+            color: $green-300;
+        }
+    }
+}
