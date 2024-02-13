@@ -1,3 +1,4 @@
+import { Avatar } from "../Avatar";
 import { Comment } from "../Comment";
 import styles from "./Post.module.scss";
 
@@ -6,13 +7,9 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img
-                        className={styles.author__avatar}
-                        src="https://avatars.githubusercontent.com/u/39103851?v=4"
-                        alt="Profile Picture"
-                    />
+                    <Avatar src="https://avatars.githubusercontent.com/u/17462446?v=4"/>
                     <div className={styles.author__info}>
-                        <strong>Gabriel Raiol</strong>
+                        <strong>Mateus Souza</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
@@ -23,7 +20,7 @@ export function Post() {
             <div className={styles.content}>
                 <p>Faaala galera 👋</p>
                 <p>Acabei de subir mais um projeto no meu portfolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-                <p>👉{' '}<a href="#">https://github.com/gabrielraiol</a></p>
+                <p>👉{' '}<a href="#">https://github.com/Knevari</a></p>
                 <p>
                     <a href="#">#novoprojeto</a>{' '}
                     <a href="#">#nlw</a>{' '}
