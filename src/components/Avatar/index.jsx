@@ -1,12 +1,13 @@
 import styles from './Avatar.module.scss';
 
-export function Avatar(props) {
+// eslint-disable-next-line react/prop-types
+export function Avatar({hasBorder = true, src}) {
     return (
         <img
             // eslint-disable-next-line no-undef, react/prop-types
-            className={styles.profile__avatar}
+            className={hasBorder ? styles.avatarWithBorder : styles.avatar}
             // eslint-disable-next-line react/prop-types
-            src={props.src}
+            src={src}
             alt="Profile Picture"
         />
     );
